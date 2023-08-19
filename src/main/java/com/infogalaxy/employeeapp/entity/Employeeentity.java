@@ -1,11 +1,13 @@
 package com.infogalaxy.employeeapp.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "employee")
 public class Employeeentity {
+	@Id
 	private int eid;
 	private String name;
 	private String department;
@@ -48,7 +50,4 @@ public class Employeeentity {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
-	
-	
-}
+	}

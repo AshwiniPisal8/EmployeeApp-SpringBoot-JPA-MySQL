@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/employeeapp")
 public class EmployeeController {
-   
-	 @GetMapping("/home")
-	 public String home() {
-		 return "Welcome to Employee App";
-	 }
+
+	@GetMapping("/home")
+	public String home() {
+		return "Welcome to Employee App";
+	}
 }
